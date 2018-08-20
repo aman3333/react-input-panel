@@ -11,6 +11,9 @@ You can find the most recent version of this guide [here](https://github.com/fac
   - [npm test](#npm-test)
   - [npm run build](#npm-run-build)
   - [npm run eject](#npm-run-eject)
+ - [ScreenShots](#screenShots)
+ - [Props](#props)
+ - [Functions](#functions)
 -
 ## Folder Structure
 
@@ -25,12 +28,14 @@ my-app/
     index.html
     favicon.ico
   src/
-    App.css
-    App.js
-    App.test.js
+    Components/
+      button.js
+      Display.js
+      App.js
+      ButtonPanel.js
     index.css
     index.js
-    logo.svg
+  
 ```
 
 For the project to build, **these files must exist with exact filenames**:
@@ -88,3 +93,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## ScreenShots
 ![](public/screenShot.png)
+
+## Props
+  ## button.js
+     value:PropTypes.string,
+     handleClick: PropTypes.func
+  ## Display.js
+      value:PropTypes.string
+  ## ButtonPanel.js
+      handleClick: PropTypes.func
+   
